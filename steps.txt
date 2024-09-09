@@ -1,0 +1,29 @@
+
+
+Steps:
+1. In the first step, we have started the project and named it as core => django-admin startproject core .
+2. In the second step we have started 2 apps in the django application => python manage.py startapp blog
+     python manage.py startapp blog_api
+3. Now, we need to create the urls.py in both the applications of the 'blog' and 'blog_api'
+4. Include both the apps in the Installed apps in the settings.py file of the core 
+5. Now, we will define the paths and the namespaces in both the apps and the main core project urls.py
+    a. use the fromat path('', include('blog.urls', namespace='blog'))
+    Here, the blog.urls is the appname_dir, urls.py python file name. The namespace can be given as the app name
+6. Now, we will define the urls.py file in both the apps 
+7. Define the template directory in the core => setting.py 
+    We can specify it as BASE_DIR / 'templates' => where templates is the separate folder which we have created
+
+
+Creating the Models of the Blog app:
+1. Here, our model is going to be a table in the database which is going to store all the post data 
+2. So, our API is going to store the POST data of the react application 
+
+
+
+
+
+
+
+
+How to run:
+1. python manage.py runserver

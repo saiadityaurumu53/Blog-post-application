@@ -1,0 +1,18 @@
+git commands:
+1. git remote add origin https://github.com/saiadityaurumu53/Blog-post-application.git
+2. git branch -M main
+3. git push -u origin main
+
+Conda commands
+1. conda activate django_react_fullstack
+
+Django commands
+1. pip install django
+2. django-admin startproject core .
+3. python manage.py startapp blog_api
+4. python manage.py startapp blog
+
+
+creating a superuser:
+1. python manage.py createsuperuser => admin and password is admin 
+
