@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'blog',
     'blog_api',
     'rest_framework',
+    'tasks_api',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +125,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES' : [
+        'rest_framework.permissions.AllowAny', #this will give permission for anyone to access out endpoints
+        #'rest_framework.permissions.IsAuthenticated', #this will only give permission for the admin level to use the apis or our application
+    ]
+}

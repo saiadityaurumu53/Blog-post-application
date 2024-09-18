@@ -1,11 +1,16 @@
 
+CHAPTER 1 Building Django RESTful API application + Building the React app to consume the API 
 
 Steps:
 1. In the first step, we have started the project and named it as core => django-admin startproject core .
 2. In the second step we have started 2 apps in the django application => python manage.py startapp blog
      python manage.py startapp blog_api
+     Note: Here we are gonna create a Blog application which is having model for the blog and we need to serve this individually on a web server.
+        our blog_api is going to manage the api for the blog.
 3. Now, we need to create the urls.py in both the applications of the 'blog' and 'blog_api'
-4. Include both the apps in the Installed apps in the settings.py file of the core 
+    blog => have the model for the blog
+    blog_api => manage the API for the blog 
+4. Include both the apps in the Installed apps in the settings.py file of the 'core' 
 5. Now, we will define the paths and the namespaces in both the apps and the main core project urls.py
     a. use the fromat path('', include('blog.urls', namespace='blog'))
     Here, the blog.urls is the appname_dir, urls.py python file name. The namespace can be given as the app name

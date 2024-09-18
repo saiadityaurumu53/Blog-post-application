@@ -13,6 +13,12 @@ Django commands
 4. python manage.py startapp blog
 
 
+
 creating a superuser:
 1. python manage.py createsuperuser => admin and password is admin 
+
+Testing:
+1. pip install coverage => for the testing of the packages
+2. coverage run manage.py test 
+
 
